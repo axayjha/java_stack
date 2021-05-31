@@ -9,13 +9,13 @@ import com.akshay.raxjsdemo.messenger.model.Message;
 
 public class MessageService {
 	
-	private Map<Long, Message> messages = DatabaseClass.getMessages();
-	
+	private static Map<Long, Message> messages = DatabaseClass.getMessages();
+	static{		
+		messages.put(1L, new Message(1L, "Hello World!", "Akshay"));
+		messages.put(2L, new Message(2L, "Hello Jersey!", "Anand"));	
+	}
 	public MessageService() {
-		Message m1 = new Message(1L, "Hello World!", "Akshay");
-		Message m2 = new Message(2L, "Hello Jersey!", "Anand");
-		messages.put(1L,  m1);
-		messages.put(2L,  m2);		
+		
 	}
 	
 	public List<Message> getAllMessages() {
@@ -43,7 +43,9 @@ public class MessageService {
 		if (message.getId() <= 0) {
 			return null;
 		}
+		
 		messages.put(message.getId(), message);
+		
 		return message;
 	}
 	
