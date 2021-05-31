@@ -8,13 +8,13 @@ import com.akshay.raxjsdemo.messenger.model.Profile;
 
 public class DatabaseClass {
 	public static Map<Long, Message> messages = new HashMap<Long, Message>();
-	public static Map<Long, Profile> profiles = new HashMap<Long, Profile>();
+	public static Map<String, Profile> profiles = new HashMap<String, Profile>();
 	
 	public static Map<Long, Message> getMessages() {
 		return messages;
 	}
 	
-	public static Map<Long, Profile> getProfiles() {
+	public static Map<String, Profile> getProfiles() {
 		return profiles;
 	}
 }
