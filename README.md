@@ -1,1 +1,3 @@
-# Some sample demo projects testing EJB, JAX-RS, JWT
+# JAVA STACK
+
+Some sample practice projects exploring SpringBoot, Spring Security, Spring Microservices, EJB, JAX-RS, etc.
