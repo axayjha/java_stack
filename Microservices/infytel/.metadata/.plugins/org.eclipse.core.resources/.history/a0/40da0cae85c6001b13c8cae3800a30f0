@@ -1,0 +1,5 @@
+spring.cloud.config.uri=http://localhost:1111
+spring.datasource.username=root
+spring.cloud.config.failFast=true
+spring.cloud.config.debug=true
+

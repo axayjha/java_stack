@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-InfytelApplication<infytel>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.infosys.infytel.InfytelApplication",
+            "projectName": "infytel",
+            "args": ""
+        }
+    ]
+}
