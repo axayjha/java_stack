@@ -35,7 +35,10 @@ public class PlanController {
 	@GetMapping(value = "/plans/{planId}",  produces = MediaType.APPLICATION_JSON_VALUE)
 	public PlanDTO getSpecificPlans(@PathVariable Integer planId) {
 		logger.info("Fetching details of plan {}",planId);
-		return planService.getSpecificPlan(planId);
+		if (planId == 0) {
+			throw new RuntimeException();
+		} else
+			return planService.getSpecificPlan(planId);
 	}
 
 }
